@@ -26,18 +26,20 @@ h1 {
 }
 
 .ghost {
+  position: absolute;
+  left:0;
+  top:0;
   height: 200px;
-  width: 100px; 
-  background-color: green;
+  width: 100px;
   animation-name: haunting;
-  animation-duration: 1s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
 @keyframes haunting {
-  0%   {left:0px; top:0px;}
-  25%  {left:200px; top:0px;}
-  50%  {left:200px; top:200px;}
-  75%  {left:0px; top:200px;}
-  100% {left:0px; top:0px;}
+  0%   {left:0; top:0;}
+  25%  {left:80%; top:50%;}
+  50%  {left:0%; top:80%;}
+  75%  {left:100%; top:0;}
+  100% {right:0; bottom:0;}
 }
