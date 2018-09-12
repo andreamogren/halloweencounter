@@ -1,0 +1,43 @@
+body {
+  background-color: #101010;
+  animation-name: lightning;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lightning {
+  2% {background-color: #FFF;}
+  3% {background-color: #101010;}
+  4% {background-color: #FFF;}
+  5% {background-color: #101010;}
+  98% {background-color: #101010;}
+}
+
+h1 {
+  font-family: 'Creepster', 'cursive';
+  font-size: 70px;
+  text-align: center;
+  color: #8A0707;
+  margin-top: 10%;
+}
+
+.lanterns {
+  margin: 0 35%;
+}
+
+.ghost {
+  height: 200px;
+  width: 100px; 
+  background-color: green;
+  animation-name: haunting;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes haunting {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
