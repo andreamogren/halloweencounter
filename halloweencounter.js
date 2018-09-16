@@ -11,3 +11,11 @@ document.getElementById("time-left").innerHTML = days;
 if (timeLeft === 1) {
   document.getElementById("days").innerHTML = 'day';
 }
+
+if (today === halloween) {
+  document.getElementById("halloweenHeading").innerHTML = "It's finally Halloween!";
+}
+
+if (days < 0) {
+  document.getElementById("halloweenHeading").innerHTML = "Stay tuned for next year...";
+}
